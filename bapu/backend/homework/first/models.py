@@ -10,7 +10,7 @@ Base = declarative_base()
 
 class MealType(PyEnum):
     BREAKFAST = "BREAKFAST"
-    LAUNCH = "LAUNCH"
+    LAUNCH = "LUNCH"
     DINNER = "DINNER"
 
 class Menu(Base):
