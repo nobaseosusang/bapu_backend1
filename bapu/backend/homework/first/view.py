@@ -18,7 +18,7 @@ async def set_bap(request: SetBapRequest, db: Session = Depends(get_db)):
 async def get_bap(start_time: datetime, end_time: datetime, db: Session = Depends(get_db)):
     menus = controller.getmenu(db=db, start_date=start_time, end_date=end_time)
     if not menus:
-        raise HTTPException(status_code=404, detail="밥없어유")
+        raise HTTPException(status_code=404, detail="")
     result = {}
     for menu in menus:
         if (menu.date, menu.meal_type, menu.rest_name) not in result:
