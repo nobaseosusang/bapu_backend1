@@ -67,7 +67,7 @@ Backend에선 MVC 디자인 패턴을 사용할거에요. Backend(특히 Python)
     
     해당 시점에 있는 식당의 식단 정보를 모두 가져와요.
 
-  response
+'''  response
 {
 	results : List[Meal]
 }
@@ -80,3 +80,4 @@ Meal
 	rest_name : str
 	menus : List[str]
 }
+'''
